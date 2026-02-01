@@ -119,10 +119,10 @@ Enriches each record with additional information from external sources:
 
 #### Transport Accessibility
 - Uses IDOS.cz (Czech public transport API) to check connections
-- Route: **Praha Rajská zahrada → School Location**
+- Default route: **Praha Rajská zahrada → School Location**
 - Target arrival: **07:45 AM on workdays**
-- Returns: journey duration, departure/arrival times, route info
-- *Note*: IDOS API access requires manual setup; currently includes placeholder logic
+- Returns: journey duration, departure/arrival times, number of transfers, route info
+- **Customizable starting point**: Use `--pid-stop` to specify a different departure station
 
 #### School Enrollment Criteria
 Scrapes official school websites for:
@@ -137,7 +137,12 @@ Scrapes official school websites for:
 
 **Run**:
 ```bash
+# Use default starting point (Rajská zahrada)
 python 3_enrichment.py
+
+# Use custom starting point
+python 3_enrichment.py --pid-stop "Nádraží Veleslavín"
+python 3_enrichment.py --pid-stop "Náměstí míru"
 ```
 
 **Output**: `data/03_enriched_schools.csv`
@@ -199,6 +204,9 @@ pip install -r requirements.txt
 python 1_scraper.py     # ~40-120 seconds
 python 2_parser.py      # ~5 seconds
 python 3_enrichment.py  # ~2-5 minutes (depends on web scraping)
+
+# Or with custom starting point for transport routes
+python 3_enrichment.py --pid-stop "Nádraží Veleslavín"
 ```
 
 ### Re-run Specific Steps
