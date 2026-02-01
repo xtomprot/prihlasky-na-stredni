@@ -1,0 +1,882 @@
+{
+	"version": "1.0.0",
+	"queries": [
+		{
+			"Query": {
+				"Commands": [
+					{
+						"SemanticQueryDataShapeCommand": {
+							"Query": {
+								"Version": 2,
+								"From": [
+									{
+										"Name": "1",
+										"Entity": "13_Kapacity_skoly_SS",
+										"Type": 0
+									},
+									{
+										"Name": "11",
+										"Entity": "13_2025_prijimacky",
+										"Type": 0
+									},
+									{
+										"Name": "l",
+										"Entity": "Points",
+										"Type": 0
+									},
+									{
+										"Name": "t",
+										"Entity": "testovani_zaci",
+										"Type": 0
+									},
+									{
+										"Name": "d",
+										"Entity": "dim_obory",
+										"Type": 0
+									},
+									{
+										"Name": "p",
+										"Entity": "Points_SKOR",
+										"Type": 0
+									},
+									{
+										"Name": "z",
+										"Entity": "Zpusob_zadani",
+										"Type": 0
+									}
+								],
+								"Select": [
+									{
+										"Aggregation": {
+											"Expression": {
+												"Column": {
+													"Expression": {
+														"SourceRef": {
+															"Source": "1"
+														}
+													},
+													"Property": "a03Name"
+												}
+											},
+											"Function": 3
+										},
+										"Name": "Min(13_Kapacity_skoly_SS.a03Name)",
+										"NativeReferenceName": "First a03Name"
+									}
+								],
+								"Where": [
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "1"
+																}
+															},
+															"Property": "a03Name"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Františka Palackého, Neratovice, Masarykova 450'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Ivana Olbrachta, Semily, Nad Špejcharem 574, příspěvková organizace'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Jana Palacha, Mělník, Pod Vrchem 3421'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Říčany, příspěvková organizace'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 9, Českolipská 373'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Karlínské gymnázium, Praha 8, Pernerova 25'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Meridian česko-britská základní škola a gymnázium s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola a Střední odborné učiliště, Mladá Boleslav, Jičínská 762'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola a Střední odborné učiliště, Nymburk, V Kolonii 1804'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola a Gymnázium Na Třebešíně'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola a Vyšší odborná škola, Liberec, příspěvková organizace'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola elektrotechnická a gymnázium V Úžlabině'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola elektrotechnická, Praha 2, Ječná 30'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola na Proseku'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola strojnická, škola hlavního města Prahy, Praha 1, Betlémská 4/287'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola technická, Jablonec nad Nisou, Belgická 4852, příspěvková organizace'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola, Mladá Boleslav, Havlíčkova 456'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola elektrotechniky a strojírenství'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Vyšší odborná škola a Střední průmyslová škola elektrotechnická Františka Křižíka, Praha 1, Na Příkopě 16'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"Comparison": {
+												"ComparisonKind": 2,
+												"Left": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "l"
+															}
+														},
+														"Property": "kolo_1_points"
+													}
+												},
+												"Right": {
+													"Literal": {
+														"Value": "50D"
+													}
+												}
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "t"
+																}
+															},
+															"Property": "Rok"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "2025L"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "d"
+																}
+															},
+															"Property": "skupina"
+														}
+													},
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "d"
+																}
+															},
+															"Property": "obory"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'GYMNÁZIA 4LETÁ (GY4)'"
+															}
+														},
+														{
+															"Literal": {
+																"Value": "'Gymnázium (7941K41)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'LYCEA (LYC)'"
+															}
+														},
+														{
+															"Literal": {
+																"Value": "'Technické lyceum (7842M01)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'SOŠ TECHNICKÉ (ST1)'"
+															}
+														},
+														{
+															"Literal": {
+																"Value": "'Elektrotechnika (2641M01)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'SOŠ TECHNICKÉ (ST1)'"
+															}
+														},
+														{
+															"Literal": {
+																"Value": "'Strojírenství (2341M01)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "1"
+																}
+															},
+															"Property": "a05Name"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Liberecký'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Praha'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Středočeský'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"Comparison": {
+												"ComparisonKind": 2,
+												"Left": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "p"
+															}
+														},
+														"Property": "Value"
+													}
+												},
+												"Right": {
+													"Literal": {
+														"Value": "14D"
+													}
+												}
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "z"
+																}
+															},
+															"Property": "Typ"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Body'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "pom"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "''"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "forma"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'denní'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k1_prum_skor"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'49.5b.'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "zamereni"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "null"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "KKOV"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'23-41-M/01'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "obor"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Strojírenství'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k1_kapacita"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "60L"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k1_pocet_podanych"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'180 (32+62+83+2+1)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k1_pocet_prijatych"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'53 (26+9+17+1+0)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k1_min_skor"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'23b.'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k2_kapacita"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "6L"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k2_pocet_podanych"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'40 (14+15+11)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k2_pocet_prijatych"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'6 (5+1+0+0+0)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k2_min_skor"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'47b.'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "11"
+																}
+															},
+															"Property": "k2_prum_skor"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'49.5b.'"
+															}
+														}
+													]
+												]
+											}
+										}
+									}
+								]
+							},
+							"Binding": {
+								"Primary": {
+									"Groupings": [
+										{
+											"Projections": [
+												0
+											]
+										}
+									]
+								},
+								"DataReduction": {
+									"DataVolume": 3,
+									"Primary": {
+										"Top": {}
+									}
+								},
+								"Version": 1
+							},
+							"ExecutionMetricsKind": 1
+						}
+					}
+				]
+			},
+			"QueryId": "",
+			"ApplicationContext": {
+				"DatasetId": "58a0ec54-35f2-4fc3-94f0-f9e0891c5e1c",
+				"Sources": [
+					{
+						"ReportId": "0b26f6ef-7ff7-45a8-8f12-78d023127d91",
+						"VisualId": "68c5ba4d862f7972e448"
+					}
+				]
+			}
+		}
+	],
+	"cancelQueries": [],
+	"modelId": 5073049
+}

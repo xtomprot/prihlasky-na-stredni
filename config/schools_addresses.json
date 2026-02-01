@@ -1,0 +1,50 @@
+{
+  "Střední odborná škola automobilní, informatiky a Gymnázium": {
+    "website": "http://www.skolahostivar.cz/",
+    "address": "Weilova 4"
+  },
+  "Střední průmyslová škola a Gymnázium Na Třebešíně": {
+    "website": "http://www.trebesin.cz/",
+    "address": "Na Třebešíně 2299/69"
+  },
+  "Střední průmyslová škola elektrotechnická a gymnázium V Úžlabině": {
+    "website": "http://www.uzlabina.cz/",
+    "address": "V Úžlabině 320/23"
+  },
+  "Střední průmyslová škola elektrotechnická, Praha 2, Ječná 30": {
+    "website": "http://www.spsejecna.cz/",
+    "address": "Ječná 517"
+  },
+  "Střední průmyslová škola na Proseku": {
+    "website": "http://www.sps-prosek.cz/",
+    "address": "Novoborská 610/2"
+  },
+  "Střední průmyslová škola sdělovací techniky, Praha 1, Panská 3": {
+    "website": "http://www.panska.cz/",
+    "address": "Panská 3"
+  },
+  "Střední průmyslová škola strojnická, škola hlavního města Prahy, Praha 1, Betlémská 4/287": {
+    "website": "http://www.betlemska.cz/",
+    "address": "Betlémská 287"
+  },
+  "Střední škola elektrotechniky a strojírenství": {
+    "website": "http://www.ssesp10.cz/",
+    "address": "Jesenická 3067/1"
+  },
+  "Vyšší odborná škola a Střední průmyslová škola dopravní, Praha 1, Masná 18": {
+    "website": "http://www.spsdmasna.cz/",
+    "address": "Masná 18"
+  },
+  "Vyšší odborná škola a Střední průmyslová škola elektrotechnická Františka Křižíka, Praha 1, Na Příkopě 16": {
+    "website": "https://www.skolakrizik.cz/",
+    "address": "Na Příkopě 856/16"
+  },
+  "Vyšší odborná škola informačních studií a Střední škola elektrotechniky, multimédií a informatiky": {
+    "website": "https://www.ssemi.cz/",
+    "address": "Novovysočanská 48/280"
+  },
+  "Střední odborná škola - Centrum odborné přípravy a Gymnázium": {
+    "website": "https://www.copag.cz/",
+    "address": "Poděbradská 179/1"
+  }
+}

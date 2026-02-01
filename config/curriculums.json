@@ -1,0 +1,32 @@
+{
+  "Values": [
+    [
+      {
+        "Literal": {
+          "Value": "'Gymnázium (7941K41)'"
+        }
+      }
+    ],
+    [
+      {
+        "Literal": {
+          "Value": "'Technické lyceum (7842M01)'"
+        }
+      }
+    ],
+    [
+      {
+        "Literal": {
+          "Value": "'Elektrotechnika (2641M01)'"
+        }
+      }
+    ],
+    [
+      {
+        "Literal": {
+          "Value": "'Strojírenství (2341M01)'"
+        }
+      }
+    ]
+  ]
+}

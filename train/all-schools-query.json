@@ -1,0 +1,1044 @@
+{
+	"version": "1.0.0",
+	"queries": [
+		{
+			"Query": {
+				"Commands": [
+					{
+						"SemanticQueryDataShapeCommand": {
+							"Query": {
+								"Version": 2,
+								"From": [
+									{
+										"Name": "1",
+										"Entity": "13_Kapacity_skoly_SS",
+										"Type": 0
+									},
+									{
+										"Name": ">",
+										"Entity": ">Measure",
+										"Type": 0
+									},
+									{
+										"Name": "l",
+										"Entity": "Points",
+										"Type": 0
+									},
+									{
+										"Name": "t",
+										"Entity": "testovani_zaci",
+										"Type": 0
+									},
+									{
+										"Name": "d",
+										"Entity": "dim_obory",
+										"Type": 0
+									},
+									{
+										"Name": "p",
+										"Entity": "Points_SKOR",
+										"Type": 0
+									},
+									{
+										"Name": "z",
+										"Entity": "Zpusob_zadani",
+										"Type": 0
+									}
+								],
+								"Select": [
+									{
+										"Measure": {
+											"Expression": {
+												"SourceRef": {
+													"Source": ">"
+												}
+											},
+											"Property": "aktualizace"
+										},
+										"Name": ">Measure.aktualizace"
+									}
+								],
+								"Where": [
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "1"
+																}
+															},
+															"Property": "a03Name"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'1. IT Gymnázium, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'1. Slovanské gymnázium a jazyková škola s právem státní jazykové zkoušky'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Akademické gymnázium a Jazyková škola s právem státní jazykové zkoušky, školy hlavního města Prahy'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Akademie řemesel Praha - Střední škola technická'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Anglicko-české gymnázium AMAZON s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'ART ECON - Gymnázium a Střední odborná škola Praha, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Českoslovanská akademie obchodní Dr. Edvarda Beneše, střední odborná škola, Praha 2, Resslova 8'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'EDUCAnet - gymnázium, střední odborná škola a základní škola Praha, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Evangelická akademie - Vyšší odborná škola sociální práce a střední odborná škola'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Evropská akademie vzdělávání, střední odborné učiliště a střední odborná škola s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'GAELY - střední škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium a Sportovní gymnázium se zaměřením na esporty, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium ARTION'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium bezpečnostně právní, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium bratří Čapků a První české soukromé střední odborné učiliště s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Čakovice, Praha 9, nám. 25. března 100'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Duhovka s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Elišky Krásnohorské, Praha 4 - Michle, Ohradní 55'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Evolution, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA Aspira s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA Digita s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA Europea s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA International s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA Orita s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium FOSTRA Pontia s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Christiana Dopplera'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium International a střední odborná škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Jana Keplera, Praha 6, Parléřova 2'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Jana Nerudy, škola hlavního města Prahy, Praha 1, Hellichova 3'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'GYMNÁZIUM JANA PALACHA PRAHA 1, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Karla Sladkovského, Praha 3, Sladkovského náměstí 8'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Kodaňská a Střední odborná škola, a.s.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium KUDYKAMPUS s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium mezinárodních a veřejných vztahů Praha s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Milady Horákové'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Opatov, Praha 4, Konstantinova 1500'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Oty Pavla, Praha 5, Loučanská 520'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Paměti národa, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium pro zrakově postižené a Střední odborná škola pro zrakově postižené, Praha 5, Radlická 115'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium prof. Jana Patočky, Praha 1, Jindřišská 36'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium se sportovní přípravou Šeberov'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium Thomase Manna, z. ú.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 10, Omská 1300'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 10, Přípotoční 1337'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 10, Voděradská 2'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 2, Botičská 1'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 4, Na Vítězné pláni 1160'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 4, Písnická 760'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 4, Postupická 3150'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 5, Na Zatlance 11'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 6, Arabská 14'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 6, Nad Alejí 1952'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 7, Nad Štolou 1'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 8, U Libeňského zámku 1'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 9, Českolipská 373'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 9, Litoměřická 726'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Praha 9, Špitálská 2'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Gymnázium, Střední odborná škola, Základní škola a Mateřská škola pro sluchově postižené, Praha 2, Ječná 27'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Heřmánek Praha, základní škola a gymnázium'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Hotelová škola a Gymnázium Radlická'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Karlínské gymnázium, Praha 8, Pernerova 25'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Klasické gymnázium Modřany a základní škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Křesťanská střední škola, základní škola a mateřská škola Elijáš, Praha 4 - Michle'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Masarykova střední škola chemická, Praha 1, Křemencova 12'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Mateřská škola, základní škola a gymnázium sv. Augustina'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Meridian česko-britská základní škola a gymnázium s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'MICHAEL - Střední škola, Gymnázium a Vyšší odborná škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Naše lyceum - střední škola s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Obchodní akademie a Gymnázium Bubeneč'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Obchodní akademie Dušní'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Obchodní akademie Vinohradská'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Obchodní akademie, Praha 10, Heroldovy sady 1'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Obchodní akademie, Praha 3, Kubelíkova 37'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'PORG - gymnázium, základní škola a mateřská škola, o.p.s.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Pražské humanitní gymnázium, školská právnická osoba'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'ScioŠkola Praha Holešovice - střední škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'ScioŠkola Žižkov - střední škola, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'School for Future – gymnázium s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Smíchovská střední průmyslová škola a gymnázium'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Soukromá střední odborná škola a Soukromé střední odborné učiliště BEAN, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Soukromá střední škola a základní škola (1. KŠPA) Praha s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Soukromá střední škola výpočetní techniky s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola - Centrum odborné přípravy a Gymnázium'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola automobilní, informatiky a Gymnázium'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola Jarov'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední odborná škola logistiky a podnikání'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola a Gymnázium Na Třebešíně'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola dopravní, a.s.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola elektrotechnická a gymnázium V Úžlabině'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola elektrotechnická, Praha 2, Ječná 30'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola na Proseku'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola sdělovací techniky, Praha 1, Panská 3'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola stavební Josefa Gočára, Praha 4, Družstevní ochoz 3'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola strojnická, škola hlavního města Prahy, Praha 1, Betlémská 4/287'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední průmyslová škola zeměměřická a Geografické gymnázium Praha'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola - Waldorfské lyceum'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola a vyšší odborná škola umělecká a řemeslná'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola elektrotechniky a strojírenství'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola Futurum, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola gastronomická a hotelová s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola hotelnictví a gastronomie SČMSD Praha, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední škola obchodní'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Střední zdravotnická škola'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'ŠKOLA EU PRAHA, střední odborná škola a gymnázium'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Škola mezinárodních a veřejných vztahů Praha, Střední odborná škola, Gymnázium, s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'VICTORIA HIGH SCHOOL - střední škola s.r.o.'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Vyšší odborná škola a Střední průmyslová škola dopravní, Praha 1, Masná 18'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'Vyšší odborná škola a Střední průmyslová škola elektrotechnická Františka Křižíka, Praha 1, Na Příkopě 16'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"Comparison": {
+												"ComparisonKind": 2,
+												"Left": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "l"
+															}
+														},
+														"Property": "kolo_1_points"
+													}
+												},
+												"Right": {
+													"Literal": {
+														"Value": "100D"
+													}
+												}
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "t"
+																}
+															},
+															"Property": "Rok"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "2025L"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "d"
+																}
+															},
+															"Property": "skupina"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'GYMNÁZIA 4LETÁ (GY4)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'LYCEA (LYC)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'SOŠ TECHNICKÉ (ST1)'"
+															}
+														}
+													],
+													[
+														{
+															"Literal": {
+																"Value": "'SOŠ TECHNOLOGICKÉ (ST2)'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "1"
+																}
+															},
+															"Property": "a05Name"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Praha'"
+															}
+														}
+													]
+												]
+											}
+										}
+									},
+									{
+										"Condition": {
+											"Comparison": {
+												"ComparisonKind": 2,
+												"Left": {
+													"Column": {
+														"Expression": {
+															"SourceRef": {
+																"Source": "p"
+															}
+														},
+														"Property": "Value"
+													}
+												},
+												"Right": {
+													"Literal": {
+														"Value": "14D"
+													}
+												}
+											}
+										}
+									},
+									{
+										"Condition": {
+											"In": {
+												"Expressions": [
+													{
+														"Column": {
+															"Expression": {
+																"SourceRef": {
+																	"Source": "z"
+																}
+															},
+															"Property": "Typ"
+														}
+													}
+												],
+												"Values": [
+													[
+														{
+															"Literal": {
+																"Value": "'Body'"
+															}
+														}
+													]
+												]
+											}
+										}
+									}
+								]
+							},
+							"Binding": {
+								"Primary": {
+									"Groupings": [
+										{
+											"Projections": [
+												0
+											]
+										}
+									]
+								},
+								"Version": 1
+							},
+							"ExecutionMetricsKind": 1
+						}
+					}
+				]
+			},
+			"QueryId": "",
+			"ApplicationContext": {
+				"DatasetId": "58a0ec54-35f2-4fc3-94f0-f9e0891c5e1c",
+				"Sources": [
+					{
+						"ReportId": "0b26f6ef-7ff7-45a8-8f12-78d023127d91",
+						"VisualId": "262a39580c9cc43de028"
+					}
+				]
+			}
+		}
+	],
+	"cancelQueries": [],
+	"modelId": 5073049
+}
